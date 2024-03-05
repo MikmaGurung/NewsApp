@@ -11,7 +11,6 @@ import retrofit2.Response
 class NewsRepositoryImplementation (
     private val newsApi: NewsApi
 ): NewsRepository{
-    @SuppressLint("SuspiciousIndentation")
     override suspend fun getTopHeadlines(): Resource<List<Article>> {
         return try {
           val response = newsApi.getNews()

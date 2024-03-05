@@ -12,7 +12,7 @@ interface NewsApi {
     @Query("apiKey") apiKey : String = ApiKey
     ) : NewsResponse
     companion object{
-       const val ApiKey = ""
+       const val ApiKey = "2b3350c2e130493a94f280d8c05ca388"
         const  val baseUrl = "https://newsapi.org/v2/"
     }
 }

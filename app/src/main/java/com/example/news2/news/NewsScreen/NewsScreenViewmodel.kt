@@ -13,7 +13,9 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class NewsScreenViewmodel @Inject constructor (private val newsRepository: NewsRepository)
+class NewsScreenViewmodel @Inject constructor (
+    private val newsRepository: NewsRepository
+)
     : ViewModel ()
 {
     var articles by mutableStateOf<List<Article>>(emptyList())
